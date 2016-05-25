@@ -52,37 +52,36 @@
 
 <div class="container">
  <form class="form-horizontal" action="" method="post">
-  <input type='hidden' name='csrfmiddlewaretoken' value='ybQP7q1v871QSuifqTnum0YY2qUhjljZ' />
-  <fieldset>
-    <legend>Register for International Teams</legend>
-<div class="well">
-<p>For XCTF teams, DO NOT REGISTER HERE.</p>
-<p>XCTF联赛队伍请勿在此注册。</p>
-</div>
- <div class="form-group">
- <label class="col-lg-2 control-label" for="id_email">E-mail</label>
- <div class="col-lg-10"><input class="form-control" id="id_email" maxlength="255" name="email" placeholder="E-mail" required="required" title="" type="email" /></div>
- </div>
-<div class="form-group">
-<label class="col-lg-2 control-label" for="id_name">Team name</label>
-<div class="col-lg-10"><input class="form-control" id="id_name" maxlength="15" name="name" placeholder="Team name" required="required" title="" type="text" /></div>
-</div>
-<!--
-
-<div class="form-group">
-<label class="col-lg-2 control-label" for="id_name">Sign name</label>
-<div class="col-lg-10"><input class="form-control" id="id_name" maxlength="30" name="sign_name" placeholder="sign name" required="required" title="" type="text" /></div>
-</div>
-<div class="form-group">
-<label class="col-lg-2 control-label" for="id_name">Sign password</label>
-<div class="col-lg-10"><input class="form-control" id="id_name" maxlength="30" name="sign_pwd" placeholder="sign password" required="required" title="" type="passwd" /></div>
-</div>
-
--->
-
+    <input type='hidden' name='csrfmiddlewaretoken' value='ybQP7q1v871QSuifqTnum0YY2qUhjljZ' />
+    <fieldset>
+      <legend>Register for International Teams</legend>
+  <div class="well">
+  <p>For XCTF teams, DO NOT REGISTER HERE.</p>
+  <p>XCTF联赛队伍请勿在此注册。</p>
+  </div>
+   <div class="form-group">
+   <label class="col-lg-2 control-label" for="id_email">E-mail</label>
+   <div class="col-lg-10"><input class="form-control" id="id_email" maxlength="255" name="email" placeholder="E-mail" required="required" title="" type="email" /></div>
+   </div>
+  <div class="form-group">
+  <label class="col-lg-2 control-label" for="id_name">Team name</label>
+  <div class="col-lg-10"><input class="form-control" id="id_name" maxlength="15" name="name" placeholder="Team name" required="required" title="" type="text" /></div>
+  </div>
 
   <div class="form-group">
-    <div class="col-lg-10 col-lg-offset-2">
+  <label class="col-lg-2 control-label" for="id_sign">Sign name</label>
+  <div class="col-lg-10"><input class="form-control" id="sign_name" maxlength="30" name="sign_name" placeholder="sign name" required="required" title="" type="text" /></div>
+  </div>
+  <div class="form-group">
+
+  <label class="col-lg-2 control-label" for="id_pwd">Sign password</label>
+  <div class="col-lg-10"><input class="form-control" id="sign_pwd" maxlength="30" name="sign_pwd" placeholder="sign password" required="required" title="" type="password" />
+</div>
+
+  <div class="form-group"></div>
+  <div class="form-group">
+
+    <div  style="text-align: center;">
         <button type="submit" class="btn btn-primary">
             Register
         </button>

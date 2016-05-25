@@ -12,6 +12,8 @@ class RegisterController extends Controller{
 			//echo phpinfo();
 			$info['team_name'] 	= $_POST['name'];
 			$info['email'] 		= $_POST['email'];
+			$info['sign_pwd']  	= $_POST['sign_pwd'];
+			$info['sign_name']	= $_POST['sign_name'];
 
 			$m = $Alictf = D('AlictfTeam');
 			//dump($m);

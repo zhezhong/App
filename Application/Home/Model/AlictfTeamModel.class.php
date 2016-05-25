@@ -8,9 +8,9 @@ class AlictfTeamModel extends Model{
 		$account = M('AlictfAccount');
 		$uid = time();
 		$data = array(
-				//'SIGN_NAME' => $info['sign_name'],
+				'SIGN_NAME' => $info['sign_name'],
 				'TEAM_NAME' => $info['team_name'],
-				//'SIGN_PWD'  => $info['sign_pwd'],
+				'SIGN_PWD'  => $info['sign_pwd'],
 				'EMAIL'		=> $info['email'],
 				//'PHONE_NUM'	=> $info['phone_num'],
 				'uid'		=> $uid
