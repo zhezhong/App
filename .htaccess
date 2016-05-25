@@ -1,0 +1,10 @@
+
+dule mod_rewrite.c>
+ # Turn on rewrite engine
+ Options +FollowSymlinks
+ RewriteEngine on
+ # More rules below
+ #RewriteEngine On
+ RewriteRule ^register /App/index.php/Home/Register/register
+ ...
+</IfModule>

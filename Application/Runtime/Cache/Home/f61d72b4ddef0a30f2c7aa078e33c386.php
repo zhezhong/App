@@ -19,6 +19,13 @@
 
 <script src="https://time.xctf.org.cn/site_media/bootstrap/js/jquery.min.js"></script>
 <script src="https://time.xctf.org.cn/site_media/bootstrap/js/bootstrap.min.js"></script>
+<script src="/App/Public/js/checkCode.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/App/Public/js/checkCode.css">
+
+<script type="text/javascript" src="idcode/jquery.min.js"></script>
+<script language="javascript" src="idcode/jquery.idcode.js"></script>
+<link type="text/css" rel="stylesheet" href="idcode/jquery.idcode.css" />
+
 
 <body >
 
@@ -69,15 +76,25 @@
   </div>
 
   <div class="form-group">
-  <label class="col-lg-2 control-label" for="id_sign">Sign name</label>
-  <div class="col-lg-10"><input class="form-control" id="sign_name" maxlength="30" name="sign_name" placeholder="sign name" required="required" title="" type="text" /></div>
-  </div>
+
+      <label class="col-lg-2 control-label" for="id_pwd">Password</label>
+      <div class="col-lg-10"><input class="form-control" id="sign_pwd" maxlength="30" name="sign_pwd" placeholder="sign password" required="required" title="" type="password" />
+</div>
+  <div class="form-group"></div>
   <div class="form-group">
 
-  <label class="col-lg-2 control-label" for="id_pwd">Sign password</label>
-  <div class="col-lg-10"><input class="form-control" id="sign_pwd" maxlength="30" name="sign_pwd" placeholder="sign password" required="required" title="" type="password" />
-</div>
+      <label class="col-lg-2 control-label" for="id_pwd">Confirm password</label>
+      <div class="col-lg-10"><input class="form-control" id="resign_pwd" maxlength="30" name="resign_pwd" placeholder="password" required="required" title="" type="password" />
+  </div>
 
+  <div class="form-group"></div>
+  <div class="form-group">
+       <div> 
+          
+         <span id="idcode" style="text-align: center;"> 
+         </span>
+       </div>
+  </div>        
   <div class="form-group"></div>
   <div class="form-group">
 
@@ -114,6 +131,11 @@
 
         return false;
     });
+});
+</script>
+<script>
+$(document).ready(function(){
+ $.idcode.setCode();
 });
 </script>
 
