@@ -22,9 +22,12 @@ class RegisterController extends Controller{
 			}
 			$m = $Alictf = D('AlictfTeam');
 			//dump($m);
-			if($Alictf->addTeam($info) == 1){
+			$ans = $Alictf->addTeam($info) ;
+			if($ans == 1){
 				$this->success('team information upload success!',Register/register);				
-			}else{
+			}else if($ans == -1){
+				$this->error('duplicate insert for your name ,maybe you have registed already !');
+			}else {
 				$this->error('register failed ,please check your input');
 			}
 

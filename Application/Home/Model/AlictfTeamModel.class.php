@@ -17,6 +17,8 @@ class AlictfTeamModel extends Model{
 				);
 		//dump($data);
 		//die;
+		$judge = $account->where(array('SIGN_NAME' => $info[sign_name]))->select();
+		if($judge != NULL) return -1;
 		$id = $account->data($data)->add();
 		//dump($info);
 		//dump('id = '.$id);
